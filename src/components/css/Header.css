@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#Header{
+    background-image: linear-gradient(90deg,black,#013026);
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Heading{
+    color: #cbe58e;    ;
+    font-size: 2rem;
+    margin: 2px 30px;
+}
+#Header ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: right;
+}
+#Header ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    padding: 3px;
+}
+#Header ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+#Header ul a:hover{
+    text-decoration: none;
+    color: #a1ce3f;
+}

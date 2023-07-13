@@ -1,0 +1,51 @@
+#Help{
+    color: black;
+    min-height: 90vh;
+    padding: 3rem;
+}
+#Help h2{
+    padding: 1rem;
+    margin: 0.2rem;
+    background-image: linear-gradient(60deg,rgba(117, 255, 124, 0.636),rgba(255, 255, 255, 0));
+    animation-name: animation1;
+    animation-duration: 1s;
+    font-size: 2rem;
+}
+.box{
+    padding: 1rem 4rem;
+    margin: 0.4rem;
+    background-image: linear-gradient(60deg,rgba(255, 255, 255, 0.636),rgba(255, 255, 255, 0));
+    animation-name: animation2;
+    animation-duration: 2s;
+    font-size: 1.2rem;
+}
+.box img{
+    height: 50px;
+    animation-name: animation3;
+    animation-duration: 2.5s;
+}
+
+@keyframes animation1{
+    from{
+        font-size: 0;
+    }
+    to{
+        font-size: 2rem;
+    }
+}
+@keyframes animation2{
+    from{
+        font-size: 0;
+    }
+    to{
+        font-size: 1.2rem;
+    }
+}
+@keyframes animation3{
+    from{
+        height: 0;
+    }
+    to{
+        height: 50px;
+    }
+}
