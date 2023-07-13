@@ -9,28 +9,28 @@ function App() {
     <BrowserRouter>
       <Header/>
       <Routes>
-        <Route path="/" element = {
+        <Route path="/space-wars/" element = {
           <>
           <Home/>
           </>
         }></Route>
       </Routes>
       <Routes>
-        <Route path="/about" element = {
+        <Route path="/space-wars/about" element = {
           <>
           <Help/>
           </>
         }></Route>
       </Routes>
       <Routes>
-        <Route path="/game" element = {
+        <Route path="/space-wars/game" element = {
           <>
           <Game/>
           </>
         }></Route>
       </Routes>
       <Routes>
-        <Route path="/login" element = {
+        <Route path="/space-wars/login" element = {
           <>
           </>
         }></Route>
