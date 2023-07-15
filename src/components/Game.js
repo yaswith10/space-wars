@@ -8,17 +8,18 @@ export const Game = () => {
   let bulletAudio = new Audio(bulletAudioObj);
   let bullets = [];
   let obstacles = [];
+  
 
   const [points, setpoints] = useState(0);
 
 
   // Function to shoot bullets
   function shootBullet() {
-    // Create a new bullet element
+    // create a new bullet element
     const bullet = document.createElement("div");
     bullet.className = "bullet";
 
-    //play the audio
+    // play the audio
     bulletAudio.play();
 
     // Position the bullet at the same coordinates as the jet
@@ -85,7 +86,7 @@ export const Game = () => {
       const obstacle = obstacles[i];
       const obstacleRect = obstacle.getBoundingClientRect();
 
-      // Check if the bullet and obstacle collide
+      //Check if the bullet and obstacle collide
       if (
         bulletRect.top <= obstacleRect.bottom &&
         bulletRect.right >= obstacleRect.left &&
@@ -93,7 +94,7 @@ export const Game = () => {
       ) {
         
         setpoints(points => points + 1);
-        // Remove the obstacle from the DOM
+        // Remove the obstacle
         obstacle.remove();
 
         // Remove the obstacle from the obstacles array
@@ -152,10 +153,11 @@ export const Game = () => {
 
       if(document.getElementById("time")===null){
         clearInterval(t);
+        clearInterval(t1);
         document.getElementById("time").style.display = "none";
       }
       
-      setTimeout(()=>{
+      let t1 = setTimeout(()=>{
         document.getElementById("screenzone").style.display = "none";
         document.getElementById("time").style.display = "none";
         clearInterval(t); 
@@ -172,7 +174,7 @@ export const Game = () => {
         <div id='scorezone'>
             <button onClick={timeStart} id='start-button'>start</button>
             <h2 id='time'></h2>
-            <h2 id='points-display'>Points: {points}</h2>
+            <h2 id='points-display'>Score: {points}</h2>
         </div>
       </div>
     </div>
