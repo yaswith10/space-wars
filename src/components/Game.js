@@ -1,9 +1,11 @@
 import React, { useEffect , useState} from 'react';
 import "./css/Game.css";
 import jetImage from "./assets/jet.png";
+import bulletAudioObj from './assets/Studio_Project_V1.mp3'
 import { Link } from 'react-router-dom';
 
 export const Game = () => {
+  let bulletAudio = new Audio(bulletAudioObj);
   let bullets = [];
   let obstacles = [];
 
@@ -15,6 +17,9 @@ export const Game = () => {
     // Create a new bullet element
     const bullet = document.createElement("div");
     bullet.className = "bullet";
+
+    //play the audio
+    bulletAudio.play();
 
     // Position the bullet at the same coordinates as the jet
     const jet = document.getElementById("jet");
@@ -112,7 +117,7 @@ export const Game = () => {
           document.getElementById("jet").style.left = "2vw";
         }
         if (e.code === "KeyJ"){
-          shootBullet();
+          shootBullet(); 
         }
       };
 
