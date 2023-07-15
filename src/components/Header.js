@@ -10,7 +10,6 @@ export const Header = () => {
             <li><Link to="/space-wars/">Home</Link></li>
             <li><Link to="/space-wars/about">Help</Link></li>
             <li><Link to="/space-wars/game">Play</Link></li>
-            <li><Link to="/space-wars/login">Login</Link></li>
         </ul>
     </header>
   )

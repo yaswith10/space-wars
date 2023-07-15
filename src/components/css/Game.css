@@ -1,8 +1,8 @@
 #gamezone{
-    height: 90vh;
+    height: 80vh;
     width: 90vw;
     background-image: linear-gradient(50deg,#013026,#014760);
-    margin: 2rem auto;
+    margin: 0.5rem auto;
     border-radius: 0.5rem;
     border: 4px solid black;
     display: flex;
@@ -10,21 +10,27 @@
 }
 #screenzone{
     display: none;
-    height: 85vh;
+    height: 78vh;
     width: 60vw;
     background-color: black;
-    margin: 1rem;
+    margin: 0.3rem;
+    border-radius: 2px;
 }
 #scorezone{
-    height: 85vh;
+    height: 78vh;
     width: 30vw;
-    background-color: rgb(234, 254, 255);
-    margin: 1rem;
+    background-image: linear-gradient(40deg, white,rgb(127, 127, 255));
+    margin: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
 }
 #jet{
     height: 8rem;
     position: relative;
-    top: 60vh;
+    top: 55vh;
     left: 2vw;
     transition: 2s ease-out;
 }
@@ -45,7 +51,7 @@
       opacity: 1;
     }
     100% {
-      transform: translateY(-100%);
+      transform: translateY(-50%);
       opacity: 0;
     }
 }
@@ -54,9 +60,7 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: rgb(13, 255, 0);
-    border-radius: 2rem;
-    border: 2px solid rgb(150, 255, 155);
+    background: url("../assets/asteroid.png") no-repeat center center/cover;
 }
 #time{
     color: #014760;

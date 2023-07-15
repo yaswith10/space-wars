@@ -10,19 +10,19 @@ export const Help = () => {
         <h2>Instructions to Play the Game</h2>
         <div className='box'>
             <div>To play the game press the start button and a timer will appear of 100 seconds.
-            Kill as many <span>Green colored</span> aliens.</div>
+            Destroy as many Asteroids as possible.</div>
             <div>
-                To move to right press <span>d</span> button.
+                To move the jet to right press <span>d</span> button.
                 <br />
                 <img src={DKey} alt="" />
             </div>
             <div>
-                To move to left press <span>a</span> button.
+                To move the jet to left press <span>a</span> button.
                 <br />
                 <img src={Akey} alt="" />
             </div>
             <div>
-                To Shoot the obstacles press <span>j</span> button.
+                To Shoot the Asteroids press <span>j</span> button.
                 <br />
                 <img src={Jkey} alt="" />
             </div>

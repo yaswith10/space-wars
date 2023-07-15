@@ -44,7 +44,8 @@ export const Game = () => {
     const maxPosition = gameZoneRect.width - 250; // Adjust the value based on the obstacle size
     const randomPosition = Math.floor(Math.random() * maxPosition + 150);
     obstacle.style.left = randomPosition + "px";
-    obstacle.style.top = gameZoneRect.height - 300 + "px";
+
+    obstacle.style.top = gameZoneRect.height - 50*Math.floor(5*Math.random()) - 100 + "px";
 
     // Append the obstacle element to the game zone
     gameZone.appendChild(obstacle);
@@ -136,14 +137,12 @@ export const Game = () => {
           document.getElementById("time").style.display = "block";
           document.getElementById("time").innerText = time_count+" seconds left";
           time_count--;
+          
         }
         else{
           time_count = 99;
+          clearInterval(t);
         }
-        // if(document.getElementById("screenzone")!=null){
-        //   if(document.getElementById("screenzone").style.display == "none"){
-        //   document.getElementById("time").innerText = "";
-        // }}
       },1000)
 
       if(document.getElementById("time")===null){
