@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/space-wars/static/css/main.094b9463.css",
-    "main.js": "/space-wars/static/js/main.9bb589eb.js",
+    "main.js": "/space-wars/static/js/main.de195fdf.js",
     "static/media/jet.png": "/space-wars/static/media/jet.8a56320893410fc8fcde.png",
     "static/media/asteroid.png": "/space-wars/static/media/asteroid.b85c32b9a32c4dec0fd8.png",
+    "static/media/Studio_Project_V1.mp3": "/space-wars/static/media/Studio_Project_V1.5e8e4d2780791a56eed6.mp3",
     "index.html": "/space-wars/index.html",
     "main.094b9463.css.map": "/space-wars/static/css/main.094b9463.css.map",
-    "main.9bb589eb.js.map": "/space-wars/static/js/main.9bb589eb.js.map"
+    "main.de195fdf.js.map": "/space-wars/static/js/main.de195fdf.js.map"
   },
   "entrypoints": [
     "static/css/main.094b9463.css",
-    "static/js/main.9bb589eb.js"
+    "static/js/main.de195fdf.js"
   ]
 }
